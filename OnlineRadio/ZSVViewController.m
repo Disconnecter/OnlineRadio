@@ -8,22 +8,34 @@
 
 #import "ZSVViewController.h"
 
+
 @interface ZSVViewController ()
 
 @end
 
 @implementation ZSVViewController
 
-- (void)viewDidLoad
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    return 6;
 }
 
-- (void)didReceiveMemoryWarning
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"RadioCell"];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"RadioCell"];
+    }
+
+    cell.textLabel.text = [NSString stringWithFormat:@"%i",indexPath.row];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
 }
 
 @end

@@ -18,6 +18,10 @@
 		0F850EF41648FF520043090E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F850EF31648FF520043090E /* Default-568h@2x.png */; };
 		0F850EF71648FF520043090E /* ZSVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F850EF61648FF520043090E /* ZSVViewController.m */; };
 		0F850EFA1648FF520043090E /* ZSVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F850EF81648FF520043090E /* ZSVViewController.xib */; };
+		0F850F0916491D1A0043090E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F850F0816491D1A0043090E /* AVFoundation.framework */; };
+		0F850F0B16491D2B0043090E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F850F0A16491D2B0043090E /* MediaPlayer.framework */; };
+		0F850F1C164947D30043090E /* ZSVRadionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F850F1B164947D30043090E /* ZSVRadionItem.m */; };
+		0F850F2516495C000043090E /* ZSVRadioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F850F2416495BFF0043090E /* ZSVRadioPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,12 @@
 		0F850EF51648FF520043090E /* ZSVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSVViewController.h; sourceTree = "<group>"; };
 		0F850EF61648FF520043090E /* ZSVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSVViewController.m; sourceTree = "<group>"; };
 		0F850EF91648FF520043090E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZSVViewController.xib; sourceTree = "<group>"; };
+		0F850F0816491D1A0043090E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0F850F0A16491D2B0043090E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0F850F1A164947D30043090E /* ZSVRadionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSVRadionItem.h; path = model/radio_item/ZSVRadionItem.h; sourceTree = "<group>"; };
+		0F850F1B164947D30043090E /* ZSVRadionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSVRadionItem.m; path = model/radio_item/ZSVRadionItem.m; sourceTree = "<group>"; };
+		0F850F2316495BFF0043090E /* ZSVRadioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSVRadioPlayer.h; path = model/radio_player/ZSVRadioPlayer.h; sourceTree = "<group>"; };
+		0F850F2416495BFF0043090E /* ZSVRadioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSVRadioPlayer.m; path = model/radio_player/ZSVRadioPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F850F0B16491D2B0043090E /* MediaPlayer.framework in Frameworks */,
+				0F850F0916491D1A0043090E /* AVFoundation.framework in Frameworks */,
 				0F850EDE1648FF520043090E /* UIKit.framework in Frameworks */,
 				0F850EE01648FF520043090E /* Foundation.framework in Frameworks */,
 				0F850EE21648FF520043090E /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +85,8 @@
 		0F850EDC1648FF520043090E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F850F0A16491D2B0043090E /* MediaPlayer.framework */,
+				0F850F0816491D1A0043090E /* AVFoundation.framework */,
 				0F850EDD1648FF520043090E /* UIKit.framework */,
 				0F850EDF1648FF520043090E /* Foundation.framework */,
 				0F850EE11648FF520043090E /* CoreGraphics.framework */,
@@ -83,6 +97,7 @@
 		0F850EE31648FF520043090E /* OnlineRadio */ = {
 			isa = PBXGroup;
 			children = (
+				0F850F14164943420043090E /* model */,
 				0F850EEC1648FF520043090E /* ZSVAppDelegate.h */,
 				0F850EED1648FF520043090E /* ZSVAppDelegate.m */,
 				0F850EF51648FF520043090E /* ZSVViewController.h */,
@@ -105,6 +120,17 @@
 				0F850EF31648FF520043090E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F850F14164943420043090E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0F850F1A164947D30043090E /* ZSVRadionItem.h */,
+				0F850F1B164947D30043090E /* ZSVRadionItem.m */,
+				0F850F2316495BFF0043090E /* ZSVRadioPlayer.h */,
+				0F850F2416495BFF0043090E /* ZSVRadioPlayer.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +203,8 @@
 				0F850EEA1648FF520043090E /* main.m in Sources */,
 				0F850EEE1648FF520043090E /* ZSVAppDelegate.m in Sources */,
 				0F850EF71648FF520043090E /* ZSVViewController.m in Sources */,
+				0F850F1C164947D30043090E /* ZSVRadionItem.m in Sources */,
+				0F850F2516495C000043090E /* ZSVRadioPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +284,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OnlineRadio/OnlineRadio-Prefix.pch";
 				INFOPLIST_FILE = "OnlineRadio/OnlineRadio-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -267,6 +296,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OnlineRadio/OnlineRadio-Prefix.pch";
 				INFOPLIST_FILE = "OnlineRadio/OnlineRadio-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -291,6 +321,7 @@
 				0F850EFF1648FF520043090E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

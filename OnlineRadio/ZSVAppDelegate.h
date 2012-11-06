@@ -8,12 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class ZSVViewController;
-
 @interface ZSVAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) ZSVViewController *viewController;
 
 @end
