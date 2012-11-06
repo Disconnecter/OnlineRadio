@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F850EDE1648FF520043090E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F850EDD1648FF520043090E /* UIKit.framework */; };
+		0F850EE01648FF520043090E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F850EDF1648FF520043090E /* Foundation.framework */; };
+		0F850EE21648FF520043090E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F850EE11648FF520043090E /* CoreGraphics.framework */; };
+		0F850EE81648FF520043090E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F850EE61648FF520043090E /* InfoPlist.strings */; };
+		0F850EEA1648FF520043090E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F850EE91648FF520043090E /* main.m */; };
+		0F850EEE1648FF520043090E /* ZSVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F850EED1648FF520043090E /* ZSVAppDelegate.m */; };
+		0F850EF01648FF520043090E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F850EEF1648FF520043090E /* Default.png */; };
+		0F850EF21648FF520043090E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F850EF11648FF520043090E /* Default@2x.png */; };
+		0F850EF41648FF520043090E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F850EF31648FF520043090E /* Default-568h@2x.png */; };
+		0F850EF71648FF520043090E /* ZSVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F850EF61648FF520043090E /* ZSVViewController.m */; };
+		0F850EFA1648FF520043090E /* ZSVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F850EF81648FF520043090E /* ZSVViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F850ED91648FF520043090E /* OnlineRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F850EDD1648FF520043090E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F850EDF1648FF520043090E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F850EE11648FF520043090E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F850EE51648FF520043090E /* OnlineRadio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OnlineRadio-Info.plist"; sourceTree = "<group>"; };
+		0F850EE71648FF520043090E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F850EE91648FF520043090E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F850EEB1648FF520043090E /* OnlineRadio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OnlineRadio-Prefix.pch"; sourceTree = "<group>"; };
+		0F850EEC1648FF520043090E /* ZSVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSVAppDelegate.h; sourceTree = "<group>"; };
+		0F850EED1648FF520043090E /* ZSVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSVAppDelegate.m; sourceTree = "<group>"; };
+		0F850EEF1648FF520043090E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0F850EF11648FF520043090E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0F850EF31648FF520043090E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0F850EF51648FF520043090E /* ZSVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSVViewController.h; sourceTree = "<group>"; };
+		0F850EF61648FF520043090E /* ZSVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSVViewController.m; sourceTree = "<group>"; };
+		0F850EF91648FF520043090E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZSVViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F850ED61648FF520043090E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F850EDE1648FF520043090E /* UIKit.framework in Frameworks */,
+				0F850EE01648FF520043090E /* Foundation.framework in Frameworks */,
+				0F850EE21648FF520043090E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F850ECE1648FF520043090E = {
+			isa = PBXGroup;
+			children = (
+				0F850EE31648FF520043090E /* OnlineRadio */,
+				0F850EDC1648FF520043090E /* Frameworks */,
+				0F850EDA1648FF520043090E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F850EDA1648FF520043090E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F850ED91648FF520043090E /* OnlineRadio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F850EDC1648FF520043090E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F850EDD1648FF520043090E /* UIKit.framework */,
+				0F850EDF1648FF520043090E /* Foundation.framework */,
+				0F850EE11648FF520043090E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F850EE31648FF520043090E /* OnlineRadio */ = {
+			isa = PBXGroup;
+			children = (
+				0F850EEC1648FF520043090E /* ZSVAppDelegate.h */,
+				0F850EED1648FF520043090E /* ZSVAppDelegate.m */,
+				0F850EF51648FF520043090E /* ZSVViewController.h */,
+				0F850EF61648FF520043090E /* ZSVViewController.m */,
+				0F850EF81648FF520043090E /* ZSVViewController.xib */,
+				0F850EE41648FF520043090E /* Supporting Files */,
+			);
+			path = OnlineRadio;
+			sourceTree = "<group>";
+		};
+		0F850EE41648FF520043090E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F850EE51648FF520043090E /* OnlineRadio-Info.plist */,
+				0F850EE61648FF520043090E /* InfoPlist.strings */,
+				0F850EE91648FF520043090E /* main.m */,
+				0F850EEB1648FF520043090E /* OnlineRadio-Prefix.pch */,
+				0F850EEF1648FF520043090E /* Default.png */,
+				0F850EF11648FF520043090E /* Default@2x.png */,
+				0F850EF31648FF520043090E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F850ED81648FF520043090E /* OnlineRadio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F850EFD1648FF520043090E /* Build configuration list for PBXNativeTarget "OnlineRadio" */;
+			buildPhases = (
+				0F850ED51648FF520043090E /* Sources */,
+				0F850ED61648FF520043090E /* Frameworks */,
+				0F850ED71648FF520043090E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnlineRadio;
+			productName = OnlineRadio;
+			productReference = 0F850ED91648FF520043090E /* OnlineRadio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F850ED01648FF520043090E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZSV;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Zabolotnyy Sergey";
+			};
+			buildConfigurationList = 0F850ED31648FF520043090E /* Build configuration list for PBXProject "OnlineRadio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F850ECE1648FF520043090E;
+			productRefGroup = 0F850EDA1648FF520043090E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F850ED81648FF520043090E /* OnlineRadio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F850ED71648FF520043090E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F850EE81648FF520043090E /* InfoPlist.strings in Resources */,
+				0F850EF01648FF520043090E /* Default.png in Resources */,
+				0F850EF21648FF520043090E /* Default@2x.png in Resources */,
+				0F850EF41648FF520043090E /* Default-568h@2x.png in Resources */,
+				0F850EFA1648FF520043090E /* ZSVViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F850ED51648FF520043090E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F850EEA1648FF520043090E /* main.m in Sources */,
+				0F850EEE1648FF520043090E /* ZSVAppDelegate.m in Sources */,
+				0F850EF71648FF520043090E /* ZSVViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F850EE61648FF520043090E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F850EE71648FF520043090E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0F850EF81648FF520043090E /* ZSVViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F850EF91648FF520043090E /* en */,
+			);
+			name = ZSVViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F850EFB1648FF520043090E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0F850EFC1648FF520043090E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F850EFE1648FF520043090E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnlineRadio/OnlineRadio-Prefix.pch";
+				INFOPLIST_FILE = "OnlineRadio/OnlineRadio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0F850EFF1648FF520043090E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OnlineRadio/OnlineRadio-Prefix.pch";
+				INFOPLIST_FILE = "OnlineRadio/OnlineRadio-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F850ED31648FF520043090E /* Build configuration list for PBXProject "OnlineRadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F850EFB1648FF520043090E /* Debug */,
+				0F850EFC1648FF520043090E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F850EFD1648FF520043090E /* Build configuration list for PBXNativeTarget "OnlineRadio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F850EFE1648FF520043090E /* Debug */,
+				0F850EFF1648FF520043090E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F850ED01648FF520043090E /* Project object */;
+}
