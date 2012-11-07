@@ -6,6 +6,6 @@
       {"radio_id":"3", "name":"kissfm", "url":"http://kissfm.ua/v3/kiss-fast.m3u", "img_url":""},
       {"radio_id":"4", "name":"rusradio", "url":"http://www.rusradio.com.ua/RusRadio.m3u", "img_url":""},
       {"radio_id":"5", "name":"MusicRadio", "url":"http://online-musicradio.tavrmedia.ua/MusicRadio.m3u", "img_url":""},
-      {"radio_id":"6", "name":"MusicRadio", "url":"http://www.radioroks.com.ua/RadioROKS.m3u", "img_url":""}
+      {"radio_id":"6", "name":"radioroks", "url":"http://www.radioroks.com.ua/RadioROKS.m3u", "img_url":""}
 	]
 }
