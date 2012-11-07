@@ -11,5 +11,9 @@
 @interface ZSVAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) NSArray *radioStations;
+
++ (NSArray *)radioStations;
++ (ZSVAppDelegate *)sharedInstance;
 
 @end

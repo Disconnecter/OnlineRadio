@@ -7,7 +7,7 @@
 //
 
 #import "ZSVViewController.h"
-
+#import "ZSVRadionItem.h"
 
 @interface ZSVViewController ()
 
@@ -17,7 +17,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return [[ZSVAppDelegate radioStations] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -25,10 +25,13 @@
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"RadioCell"];
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"RadioCell"];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                       reuseIdentifier:@"RadioCell"] autorelease];
     }
 
-    cell.textLabel.text = [NSString stringWithFormat:@"%i",indexPath.row];
+    ZSVRadionItem *radioStation = [[ZSVAppDelegate radioStations] objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = radioStation.name;
     
     return cell;
 }

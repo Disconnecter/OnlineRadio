@@ -8,15 +8,28 @@
 
 #import "ZSVAppDelegate.h"
 #import "ZSVViewController.h"
+#import "ZSVRadionItem.h"
 
-#define STATION_LIST_URL @"https://github.com/Disconnecter/OnlineRadio/blob/master/radio_list.json"
+#define STATION_LIST_URL @"https://raw.github.com/Disconnecter/OnlineRadio/master/radio_list.json"
 
 @implementation ZSVAppDelegate
 
 - (void)dealloc
 {
     [_window release];
+    [_radioStations release];
+    
     [super dealloc];
+}
+
++ (ZSVAppDelegate *)sharedInstance
+{
+    return (ZSVAppDelegate *)[UIApplication sharedApplication].delegate;
+}
+
++ (NSArray *)radioStations
+{
+    return [ZSVAppDelegate sharedInstance].radioStations;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -37,8 +50,21 @@
 - (void)loadStationsList
 {
     NSData *stationData = [NSData dataWithContentsOfURL:[NSURL URLWithString:STATION_LIST_URL]];
-//    NSDictionary *di = [NSDictionary dictionaryWith];
     
+    NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:stationData
+                                                             options:NSJSONReadingMutableContainers
+                                                               error:nil];
+                              
+    NSArray *radioDictionaries = [jsonData objectForKey:@"radio"];
+    
+    NSMutableArray *radios = [[[NSMutableArray alloc] initWithCapacity:[radioDictionaries count]] autorelease];
+    
+    for (NSDictionary *radioDictionary in radioDictionaries)
+    {
+        [radios addObject:[ZSVRadionItem radioItemWithDictionary:radioDictionary]];
+    }
+    
+    _radioStations = [[NSArray alloc] initWithArray:radios];
 }
 
 
