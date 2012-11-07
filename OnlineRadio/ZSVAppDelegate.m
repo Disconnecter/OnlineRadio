@@ -19,6 +19,7 @@
 {
     [_window release];
     [_radioStations release];
+    [_radioPlayer release];
     
     [super dealloc];
 }
@@ -49,7 +50,7 @@
     
     self.window.rootViewController = navigationViewCtrl;
     [self.window makeKeyAndVisible];
-
+    _radioPlayer = [ZSVRadioPlayer new];
     return YES;
 }
 

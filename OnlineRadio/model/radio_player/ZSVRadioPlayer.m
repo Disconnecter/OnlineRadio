@@ -13,7 +13,16 @@
 
 - (void)playRadioWithURLString:(NSString *)aUrlString
 {
-    player = [AVPlayer playerWithURL:[NSURL URLWithString:aUrlString]];
+    if ([_url isEqualToString:aUrlString])
+    {
+        return;
+    }
+    
+    _url = [NSString stringWithString:aUrlString];
+    [player pause];
+    [player release];
+    player = nil;
+    player = [[AVPlayer alloc ] initWithURL:[NSURL URLWithString:_url]];
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     [player play];
 }

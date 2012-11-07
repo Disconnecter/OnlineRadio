@@ -47,13 +47,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ZSVRadionItem *radioStation = [[ZSVAppDelegate radioStations] objectAtIndex:indexPath.row];
-    
     ZSVPlayerViewController *playerViewController = [[ZSVPlayerViewController new] autorelease];
-    playerViewController.logoImg.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:radioStation.img_url]]];
-    [playerViewController.radioName setText:radioStation.name];
-    [[ZSVAppDelegate radioPlayer] playRadioWithURLString:radioStation.urlString];
+    ZSVRadionItem *ri = [[ZSVAppDelegate radioStations] objectAtIndex:indexPath.row];
+    [[ZSVAppDelegate radioPlayer] playRadioWithURLString:ri.urlString];
     [self.navigationController pushViewController:playerViewController animated:YES];
+    [playerViewController.radioName setText:ri.name];
+    playerViewController.currentRadioID = indexPath.row;
+    
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:ri.img_url]]];
+    [playerViewController.logoImg setImage:image];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

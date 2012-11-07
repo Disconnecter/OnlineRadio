@@ -13,6 +13,7 @@
 @interface ZSVRadioPlayer : NSObject
 {
     AVPlayer *player;
+    NSString *_url;
 }
 
 - (void)playRadioWithURLString:(NSString *)aUrlString;
