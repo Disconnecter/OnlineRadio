@@ -9,6 +9,7 @@
 #import "ZSVAppDelegate.h"
 #import "ZSVViewController.h"
 #import "ZSVRadionItem.h"
+#import "ZSVRadioPlayer.h"
 
 #define STATION_LIST_URL @"https://raw.github.com/Disconnecter/OnlineRadio/master/radio_list.json"
 
@@ -30,6 +31,11 @@
 + (NSArray *)radioStations
 {
     return [ZSVAppDelegate sharedInstance].radioStations;
+}
+
++ (ZSVRadioPlayer *)radioPlayer
+{
+    return [ZSVAppDelegate sharedInstance].radioPlayer;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

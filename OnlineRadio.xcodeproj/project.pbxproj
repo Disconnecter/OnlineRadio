@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3996E1164A62E60043C162 /* ZSVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3996DF164A62E60043C162 /* ZSVPlayerViewController.m */; };
+		0F3996E2164A62E70043C162 /* ZSVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3996E0164A62E60043C162 /* ZSVPlayerViewController.xib */; };
 		0F850EDE1648FF520043090E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F850EDD1648FF520043090E /* UIKit.framework */; };
 		0F850EE01648FF520043090E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F850EDF1648FF520043090E /* Foundation.framework */; };
 		0F850EE21648FF520043090E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F850EE11648FF520043090E /* CoreGraphics.framework */; };
@@ -25,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F3996DE164A62E60043C162 /* ZSVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSVPlayerViewController.h; sourceTree = "<group>"; };
+		0F3996DF164A62E60043C162 /* ZSVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSVPlayerViewController.m; sourceTree = "<group>"; };
+		0F3996E0164A62E60043C162 /* ZSVPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSVPlayerViewController.xib; sourceTree = "<group>"; };
 		0F850ED91648FF520043090E /* OnlineRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F850EDD1648FF520043090E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0F850EDF1648FF520043090E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +108,9 @@
 				0F850EF51648FF520043090E /* ZSVViewController.h */,
 				0F850EF61648FF520043090E /* ZSVViewController.m */,
 				0F850EF81648FF520043090E /* ZSVViewController.xib */,
+				0F3996DE164A62E60043C162 /* ZSVPlayerViewController.h */,
+				0F3996DF164A62E60043C162 /* ZSVPlayerViewController.m */,
+				0F3996E0164A62E60043C162 /* ZSVPlayerViewController.xib */,
 				0F850EE41648FF520043090E /* Supporting Files */,
 			);
 			path = OnlineRadio;
@@ -190,6 +198,7 @@
 				0F850EF21648FF520043090E /* Default@2x.png in Resources */,
 				0F850EF41648FF520043090E /* Default-568h@2x.png in Resources */,
 				0F850EFA1648FF520043090E /* ZSVViewController.xib in Resources */,
+				0F3996E2164A62E70043C162 /* ZSVPlayerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +214,7 @@
 				0F850EF71648FF520043090E /* ZSVViewController.m in Sources */,
 				0F850F1C164947D30043090E /* ZSVRadionItem.m in Sources */,
 				0F850F2516495C000043090E /* ZSVRadioPlayer.m in Sources */,
+				0F3996E1164A62E60043C162 /* ZSVPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

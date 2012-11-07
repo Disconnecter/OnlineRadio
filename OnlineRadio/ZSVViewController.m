@@ -8,6 +8,8 @@
 
 #import "ZSVViewController.h"
 #import "ZSVRadionItem.h"
+#import "ZSVRadioPlayer.h"
+#import "ZSVPlayerViewController.h"
 
 @interface ZSVViewController ()
 
@@ -15,9 +17,11 @@
 
 @implementation ZSVViewController
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (void)viewDidLoad
 {
-    return [[ZSVAppDelegate radioStations] count];
+    [super viewDidLoad];
+    
+    [self setTitle:@"Radio stations"];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -36,9 +40,20 @@
     return cell;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [[ZSVAppDelegate radioStations] count];
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    ZSVRadionItem *radioStation = [[ZSVAppDelegate radioStations] objectAtIndex:indexPath.row];
+    
+    ZSVPlayerViewController *playerViewController = [[ZSVPlayerViewController new] autorelease];
+    playerViewController.logoImg.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:radioStation.img_url]]];
+    [playerViewController.radioName setText:radioStation.name];
+    [[ZSVAppDelegate radioPlayer] playRadioWithURLString:radioStation.urlString];
+    [self.navigationController pushViewController:playerViewController animated:YES];
 }
 
 @end
