@@ -61,6 +61,9 @@
 - (IBAction)playPausePresed:(UIButton *)sender
 {
     (_isPlaying)? [[ZSVAppDelegate radioPlayer] pauseRadio] :[[ZSVAppDelegate radioPlayer] resumePlay];
+    
+    UIImage *image = (_isPlaying)? [UIImage imageNamed:@"pause.png"]: [UIImage imageNamed:@"play.png"];
+    [_playPause setImage:image forState:UIControlStateNormal];
     _isPlaying = !_isPlaying;   
 }
 

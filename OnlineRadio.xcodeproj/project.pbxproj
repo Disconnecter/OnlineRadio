@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F10591F164D343B0036FB1D /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F105917164D343B0036FB1D /* next.png */; };
+		0F105920164D343B0036FB1D /* next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F105918164D343B0036FB1D /* next@2x.png */; };
+		0F105921164D343B0036FB1D /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F105919164D343B0036FB1D /* pause.png */; };
+		0F105922164D343B0036FB1D /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F10591A164D343B0036FB1D /* pause@2x.png */; };
+		0F105923164D343B0036FB1D /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F10591B164D343B0036FB1D /* play.png */; };
+		0F105924164D343B0036FB1D /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F10591C164D343B0036FB1D /* play@2x.png */; };
+		0F105925164D343B0036FB1D /* prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F10591D164D343B0036FB1D /* prev.png */; };
+		0F105926164D343B0036FB1D /* prev@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F10591E164D343B0036FB1D /* prev@2x.png */; };
 		0F3996E1164A62E60043C162 /* ZSVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3996DF164A62E60043C162 /* ZSVPlayerViewController.m */; };
 		0F3996E2164A62E70043C162 /* ZSVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3996E0164A62E60043C162 /* ZSVPlayerViewController.xib */; };
 		0F850EDE1648FF520043090E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F850EDD1648FF520043090E /* UIKit.framework */; };
@@ -27,6 +35,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F105917164D343B0036FB1D /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = next.png; path = resourses/next.png; sourceTree = SOURCE_ROOT; };
+		0F105918164D343B0036FB1D /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "next@2x.png"; path = "resourses/next@2x.png"; sourceTree = SOURCE_ROOT; };
+		0F105919164D343B0036FB1D /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = resourses/pause.png; sourceTree = SOURCE_ROOT; };
+		0F10591A164D343B0036FB1D /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pause@2x.png"; path = "resourses/pause@2x.png"; sourceTree = SOURCE_ROOT; };
+		0F10591B164D343B0036FB1D /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = resourses/play.png; sourceTree = SOURCE_ROOT; };
+		0F10591C164D343B0036FB1D /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play@2x.png"; path = "resourses/play@2x.png"; sourceTree = SOURCE_ROOT; };
+		0F10591D164D343B0036FB1D /* prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = prev.png; path = resourses/prev.png; sourceTree = SOURCE_ROOT; };
+		0F10591E164D343B0036FB1D /* prev@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "prev@2x.png"; path = "resourses/prev@2x.png"; sourceTree = SOURCE_ROOT; };
 		0F3996DE164A62E60043C162 /* ZSVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSVPlayerViewController.h; sourceTree = "<group>"; };
 		0F3996DF164A62E60043C162 /* ZSVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSVPlayerViewController.m; sourceTree = "<group>"; };
 		0F3996E0164A62E60043C162 /* ZSVPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSVPlayerViewController.xib; sourceTree = "<group>"; };
@@ -70,10 +86,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F105928164D344F0036FB1D /* resourses */ = {
+			isa = PBXGroup;
+			children = (
+				0F105917164D343B0036FB1D /* next.png */,
+				0F105918164D343B0036FB1D /* next@2x.png */,
+				0F105919164D343B0036FB1D /* pause.png */,
+				0F10591A164D343B0036FB1D /* pause@2x.png */,
+				0F10591B164D343B0036FB1D /* play.png */,
+				0F10591C164D343B0036FB1D /* play@2x.png */,
+				0F10591D164D343B0036FB1D /* prev.png */,
+				0F10591E164D343B0036FB1D /* prev@2x.png */,
+			);
+			name = resourses;
+			path = OnlineRadio;
+			sourceTree = "<group>";
+		};
 		0F850ECE1648FF520043090E = {
 			isa = PBXGroup;
 			children = (
 				0F850EE31648FF520043090E /* OnlineRadio */,
+				0F105928164D344F0036FB1D /* resourses */,
 				0F850EDC1648FF520043090E /* Frameworks */,
 				0F850EDA1648FF520043090E /* Products */,
 			);
@@ -199,6 +232,14 @@
 				0F850EF41648FF520043090E /* Default-568h@2x.png in Resources */,
 				0F850EFA1648FF520043090E /* ZSVViewController.xib in Resources */,
 				0F3996E2164A62E70043C162 /* ZSVPlayerViewController.xib in Resources */,
+				0F10591F164D343B0036FB1D /* next.png in Resources */,
+				0F105920164D343B0036FB1D /* next@2x.png in Resources */,
+				0F105921164D343B0036FB1D /* pause.png in Resources */,
+				0F105922164D343B0036FB1D /* pause@2x.png in Resources */,
+				0F105923164D343B0036FB1D /* play.png in Resources */,
+				0F105924164D343B0036FB1D /* play@2x.png in Resources */,
+				0F105925164D343B0036FB1D /* prev.png in Resources */,
+				0F105926164D343B0036FB1D /* prev@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
