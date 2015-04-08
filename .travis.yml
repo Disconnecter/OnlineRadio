@@ -1,0 +1,6 @@
+language: objective-c
+before_install:
+  - brew update
+  - brew reinstall xctool
+script:
+  - xctool -project Bolts.xcodeproj -sdk iphonesimulator -scheme OnlineRadio -configuration Debug test
