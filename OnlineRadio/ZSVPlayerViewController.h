@@ -14,4 +14,5 @@
 @property (retain, nonatomic) IBOutlet UIImageView *logoImg;
 @property (retain, nonatomic) IBOutlet UILabel *radioName;
 @property (assign, nonatomic) NSInteger currentRadioID;
+
 @end

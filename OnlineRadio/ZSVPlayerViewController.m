@@ -14,6 +14,7 @@
 @interface ZSVPlayerViewController ()
 
 @property (retain, nonatomic) IBOutlet UIButton *playPause;
+@property (nonatomic, retain) ZSVRadionItem *radioItem;
 
 @end
 
@@ -41,6 +42,7 @@
 {
     [super viewDidAppear:animated];
     _isPlaying = YES;
+    [self playNewRadioWithRadioItem:[[ZSVAppDelegate radioStations] objectAtIndex:_currentRadioID]];
 }
 
 - (IBAction)nextStationPressed:(UIButton *)sender

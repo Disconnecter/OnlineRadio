@@ -201,7 +201,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ZSV;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Zabolotnyy Sergey";
 			};
 			buildConfigurationList = 0F850ED31648FF520043090E /* Build configuration list for PBXProject "OnlineRadio" */;
@@ -292,6 +292,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -342,6 +343,7 @@
 				GCC_PREFIX_HEADER = "OnlineRadio/OnlineRadio-Prefix.pch";
 				INFOPLIST_FILE = "OnlineRadio/OnlineRadio-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "hata.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -354,6 +356,7 @@
 				GCC_PREFIX_HEADER = "OnlineRadio/OnlineRadio-Prefix.pch";
 				INFOPLIST_FILE = "OnlineRadio/OnlineRadio-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "hata.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
