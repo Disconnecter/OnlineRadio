@@ -12,7 +12,7 @@
 
 + (ZSVRadionItem *)radioItemWithDictionary:(NSDictionary *)dictionary
 {
-    ZSVRadionItem *radioItem = [[[ZSVRadionItem alloc] initWithDictionary:dictionary] autorelease];
+    ZSVRadionItem *radioItem = [[ZSVRadionItem alloc] initWithDictionary:dictionary];
     
     return radioItem;
 }
@@ -29,15 +29,6 @@
     }
 
     return self;
-}
-
-- (void)dealloc
-{
-    [_urlString release];
-    [_img_url release];
-    [_name release];
-    
-    [super dealloc];
 }
 
 @end

@@ -20,7 +20,6 @@
     
     _url = [NSString stringWithString:aUrlString];
     [player pause];
-    [player release];
     player = nil;
     player = [[AVPlayer alloc ] initWithURL:[NSURL URLWithString:_url]];
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
@@ -41,13 +40,6 @@
     {
         [player play];
     }
-}
-
-- (void)dealloc
-{
-    [player release];
-    
-    [super dealloc];
 }
 
 @end

@@ -31,11 +31,11 @@
     
     if (cell == nil)
     {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                       reuseIdentifier:@"RadioCell"] autorelease];
-        [cell.imageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:radioStation.img_url]]]];
-        cell.textLabel.text = radioStation.name;
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                       reuseIdentifier:@"RadioCell"];
     }
+    [cell.imageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:radioStation.img_url]]]];
+    cell.textLabel.text = radioStation.name;
 
     return cell;
 }
@@ -47,7 +47,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ZSVPlayerViewController *playerViewController = [[ZSVPlayerViewController new] autorelease];
+    ZSVPlayerViewController *playerViewController = [ZSVPlayerViewController new];
     [self.navigationController pushViewController:playerViewController animated:YES];
     playerViewController.currentRadioID = indexPath.row;
     

@@ -20,15 +20,6 @@
 
 @implementation ZSVPlayerViewController
 
-- (void)dealloc
-{
-    [_logoImg release];
-    [_radioName release];
-    [_playPause release];
-
-    [super dealloc];
-}
-
 - (void)viewDidUnload
 {
     [self setLogoImg:nil];

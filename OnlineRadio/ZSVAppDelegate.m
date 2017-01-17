@@ -15,15 +15,6 @@
 
 @implementation ZSVAppDelegate
 
-- (void)dealloc
-{
-    [_window release];
-    [_radioStations release];
-    [_radioPlayer release];
-    
-    [super dealloc];
-}
-
 + (ZSVAppDelegate *)sharedInstance
 {
     return (ZSVAppDelegate *)[UIApplication sharedApplication].delegate;
@@ -41,12 +32,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     [self loadStationsList];
     
     UINavigationController *navigationViewCtrl =
-    [[[UINavigationController alloc] initWithRootViewController:[[ZSVViewController new] autorelease]] autorelease];
+    [[UINavigationController alloc] initWithRootViewController:[ZSVViewController new]];
     
     self.window.rootViewController = navigationViewCtrl;
     [self.window makeKeyAndVisible];
@@ -64,7 +55,7 @@
                               
     NSArray *radioDictionaries = [jsonData objectForKey:@"radio"];
     
-    NSMutableArray *radios = [[[NSMutableArray alloc] initWithCapacity:[radioDictionaries count]] autorelease];
+    NSMutableArray *radios = [[NSMutableArray alloc] initWithCapacity:[radioDictionaries count]];
     
     for (NSDictionary *radioDictionary in radioDictionaries)
     {
