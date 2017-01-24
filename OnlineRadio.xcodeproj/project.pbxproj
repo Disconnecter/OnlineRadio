@@ -31,6 +31,7 @@
 		0F850F0B16491D2B0043090E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F850F0A16491D2B0043090E /* MediaPlayer.framework */; };
 		0F850F1C164947D30043090E /* ZSVRadionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F850F1B164947D30043090E /* ZSVRadionItem.m */; };
 		0F850F2516495C000043090E /* ZSVRadioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F850F2416495BFF0043090E /* ZSVRadioPlayer.m */; };
+		2A168E341E37479B00083D45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A168E331E37479B00083D45 /* Images.xcassets */; };
 		2A790D2C1E373E9D007CC5E0 /* ZSVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A790D2E1E373E9D007CC5E0 /* ZSVPlayerViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		0F850F1B164947D30043090E /* ZSVRadionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSVRadionItem.m; path = model/radio_item/ZSVRadionItem.m; sourceTree = "<group>"; };
 		0F850F2316495BFF0043090E /* ZSVRadioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSVRadioPlayer.h; path = model/radio_player/ZSVRadioPlayer.h; sourceTree = "<group>"; };
 		0F850F2416495BFF0043090E /* ZSVRadioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSVRadioPlayer.m; path = model/radio_player/ZSVRadioPlayer.m; sourceTree = "<group>"; };
+		2A168E331E37479B00083D45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2A790D2D1E373E9D007CC5E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZSVPlayerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +146,7 @@
 				0F3996DE164A62E60043C162 /* ZSVPlayerViewController.h */,
 				0F3996DF164A62E60043C162 /* ZSVPlayerViewController.m */,
 				2A790D2E1E373E9D007CC5E0 /* ZSVPlayerViewController.xib */,
+				2A168E331E37479B00083D45 /* Images.xcassets */,
 				0F850EE41648FF520043090E /* Supporting Files */,
 			);
 			path = OnlineRadio;
@@ -203,6 +206,11 @@
 				CLASSPREFIX = ZSV;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Zabolotnyy Sergey";
+				TargetAttributes = {
+					0F850ED81648FF520043090E = {
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 0F850ED31648FF520043090E /* Build configuration list for PBXProject "OnlineRadio" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -232,6 +240,7 @@
 				0F850EF41648FF520043090E /* Default-568h@2x.png in Resources */,
 				0F850EFA1648FF520043090E /* ZSVViewController.xib in Resources */,
 				2A790D2C1E373E9D007CC5E0 /* ZSVPlayerViewController.xib in Resources */,
+				2A168E341E37479B00083D45 /* Images.xcassets in Resources */,
 				0F10591F164D343B0036FB1D /* next.png in Resources */,
 				0F105920164D343B0036FB1D /* next@2x.png in Resources */,
 				0F105921164D343B0036FB1D /* pause.png in Resources */,
@@ -373,11 +382,15 @@
 		0F850EFE1648FF520043090E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OnlineRadio/OnlineRadio-Prefix.pch";
 				INFOPLIST_FILE = "OnlineRadio/OnlineRadio-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "hata.${PRODUCT_NAME:rfc1034identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				PRODUCT_BUNDLE_IDENTIFIER = zabolotnyy.OnlineRadio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -386,11 +399,15 @@
 		0F850EFF1648FF520043090E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OnlineRadio/OnlineRadio-Prefix.pch";
 				INFOPLIST_FILE = "OnlineRadio/OnlineRadio-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "hata.${PRODUCT_NAME:rfc1034identifier}";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				PRODUCT_BUNDLE_IDENTIFIER = zabolotnyy.OnlineRadio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
